@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalRush | Need Help Right Now?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glow { box-shadow: 0 0 80px -10px rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body class="bg-black text-white selection:bg-zinc-700">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 w-full z-50 border-b border-zinc-800 bg-black/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-white p-1 rounded-lg">
+                    <i data-lucide="zap" class="text-black w-6 h-6 fill-black"></i>
+                </div>
+                <span class="text-2xl font-black tracking-tighter uppercase">LocalRush</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+                <a href="#how" class="hover:text-white transition">How it Works</a>
+                <a href="#revenue" class="hover:text-white transition">Partnerships</a>
+            </div>
+            <button class="bg-white text-black px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-zinc-200 transition">
+                Get Started
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 px-6 md:px-16 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-zinc-900/20 blur-[120px] rounded-full -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-[10px] font-bold tracking-widest text-zinc-400 mb-8 uppercase">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    LocalRush • Michigan Launch
+                </div>
+
+                <h1 class="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter">
+                    Need Help <br />
+                    <span class="text-zinc-500 italic">Right Now?</span>
+                </h1>
+
+                <p class="mt-8 text-xl text-zinc-400 leading-relaxed max-w-xl">
+                    The urgent marketplace connecting you with trusted local workers for same-day labor, moving, events, and last-minute gigs.
+                </p>
+
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <button class="bg-white text-black px-8 py-5 rounded-2xl font-black text-lg flex items-center gap-2 hover:scale-[1.02] transition-all">
+                        Post A Job <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </button>
+                    <button class="border border-zinc-700 px-8 py-5 rounded-2xl font-black text-lg hover:bg-zinc-900 transition-all">
+                        Find Work
+                    </button>
+                </div>
+            </div>
+
+            <!-- LIVE REQUESTS CARD -->
+            <div class="bg-zinc-950 border border-zinc-800 rounded-[32px] p-8 shadow-2xl relative glow">
+                <div class="flex items-center justify-between mb-8">
+                    <div>
+                        <h2 class="text-2xl font-black">Live Requests</h2>
+                        <p class="text-zinc-500 text-sm">Real-time jobs nearby</p>
+                    </div>
+                    <div class="px-3 py-1 bg-green-500/10 border border-green-500/20 rounded-lg text-green-500 text-[10px] font-bold tracking-widest">LIVE</div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-black border border-zinc-800 rounded-2xl p-5 hover:border-zinc-500 transition-all cursor-pointer">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-zinc-500">Sports</span>
+                                <h3 class="font-bold text-lg">Need 2 Basketball Refs</h3>
+                                <p class="text-zinc-500 text-sm mt-1">Detroit • 2m ago</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-black tracking-tight">$180</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-black border border-zinc-800 rounded-2xl p-5 hover:border-zinc-500 transition-all cursor-pointer">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-zinc-500">Labor</span>
+                                <h3 class="font-bold text-lg">Moving Help Needed</h3>
+                                <p class="text-zinc-500 text-sm mt-1">Westland • 5m ago</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-black tracking-tight">$120</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CTA -->
+    <section class="px-6 py-24 bg-white text-black text-center mt-20">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-8 italic">READY TO RUSH?</h2>
+        <button class="bg-black text-white px-10 py-6 rounded-2xl font-black text-xl hover:scale-105 transition">
+            Join The Waitlist
+        </button>
+    </section>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
